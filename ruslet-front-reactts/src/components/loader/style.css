@@ -1,0 +1,29 @@
+.loader{
+    margin: 0;
+    position: fixed;
+    top: 38vh;
+    left: 50vw;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+.loader-background{
+    position: fixed;
+    z-index: 9998;
+    color: #000;
+    width: 100vw;
+    height: 100vh;
+    background: var(--page-bg);
+    opacity: 0.8;
+}
+.exit-button{
+    font-size: 35px;
+    color: #5c62ec;
+    cursor: pointer;
+    position: fixed;
+    top: -20vh;
+    left: 45vw;
+    
+    font-weight: bolder;
+    z-index: 9999;
+}

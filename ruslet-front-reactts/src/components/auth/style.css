@@ -1,0 +1,107 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --img-show: url(../../components/auth/img/password-show.png);
+	--img-hide: url(../../components/auth/img/password-hide.png);
+}
+
+.dark {
+	/* Dark mode */
+  --img-show: url(../../components/auth/img/password-show-dark.png);
+	--img-hide: url(../../components/auth/img/password-hide-dark.png);
+}
+
+.container header {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.container form {
+  margin-top: 30px;
+}
+form .field {
+  margin-bottom: 0px;
+}
+form .input-field {
+  position: relative;
+  height: 55px;
+  width: 100%;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  border: 1px solid var(--form-border-color);
+}
+.invalid input {
+  border-color: #d93025;
+}
+.input-field .show-hide {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+}
+.field .error {
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 0px;
+  color: #d93025;
+  font-size: 13px;
+  display:flex;
+}
+.error-text{
+  max-height: 13px;
+  font-size: 13px;
+}
+.invalid .error {
+  display: flex;
+}
+.error .error-icon {
+  margin-right: 6px;
+  font-size: 13px;
+  min-height: 13px;
+}
+.create-password .error {
+  align-items: flex-start;
+}
+.create-password .error-icon {
+  margin-top: 4px;
+  
+}
+.button {
+  margin: 25px 0 6px;
+}
+.button input {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input:hover {
+  background-color: #0e4bf1;
+}
+
+.password-image{
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
+}
+.password-hide-image{
+  background-image: var(--img-hide);
+}
+.password-show-image{
+  background-image: var(--img-show);
+}

@@ -1,0 +1,6 @@
+@ruslet_back_HostAddress = http://localhost:5194
+
+GET {{ruslet_back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
